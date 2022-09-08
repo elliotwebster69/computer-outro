@@ -9,8 +9,9 @@ from ctypes import c_uint
 from ctypes import c_ulong
 from ctypes import POINTER
 from ctypes import byref
+# replace with your path
+webbrowser.open("C:/Users/hamza/Downloads/computer-outro-main/outro.mp3")
 
-webbrowser.open(os.getcwd() + "\outro.mp3")
 time.sleep(0.25)
 keyboard.press_and_release("windows + m")
 keyboard.press_and_release("alt + tab")
@@ -40,5 +41,3 @@ windll.ntdll.NtRaiseHardError(
     c_uint(6), 
     byref(c_uint())
 )
-print("Goodbye!")
-time.sleep(7)
